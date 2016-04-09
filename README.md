@@ -16,6 +16,7 @@ Twitter Rest API: to poll twitter for trending topics and gather tweets for view
 C#: Aggregate of scripts designed to create the maze
 
 Structures and Design
+
 1. User opens Unity game (Maze class)
 2. Page loads script to initiate construction of a maze (MazeCollection class)
   1. Twitter API polls a trending topic to explore
