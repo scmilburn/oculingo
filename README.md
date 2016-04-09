@@ -1,1 +1,1 @@
-#hashtag_room
+#hashtag_maze
