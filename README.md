@@ -12,10 +12,10 @@
 
 ###Project Stack
 
-\#Maze Stack
-Unity: to deliver 3D representation
-Twitter Rest API: to poll twitter for trending topics and gather tweets for viewing
-C#: Aggregate of scripts designed to create the maze
+* \#Maze Stack
+  * Unity: to deliver 3D representation
+  * Twitter Rest API: to poll twitter for trending topics and gather tweets for viewing
+  * C#: Aggregate of scripts designed to create the maze
 
 ###Structures and Design
 
