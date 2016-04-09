@@ -23,12 +23,12 @@ Structures and Design
   2. Twitter API gathers tweets from trending topic and stores them into a set
   3. Scripts creates data representation of the maze
 1. Unity reads maze data (MazeConstruction class)
-  * Unity reads data from Twitter based process, creating a 2D plane of cells or areas to be the “floor plan” of the maze
-  * Populate areas of the maze with floating text of tweets that created the maze, providing the visualization of the data
-  * Processes anything necessary to make the maze “tangible” and “usable”
+  1. Unity reads data from Twitter based process, creating a 2D plane of cells or areas to be the “floor plan” of the maze
+  2. Populate areas of the maze with floating text of tweets that created the maze, providing the visualization of the data
+  3. Processes anything necessary to make the maze “tangible” and “usable”
 1. Handle Control and Oculus (MazeEngine class)
-  * Write control code that captures input to allow for interaction with maze
-  * Have maze display on Oculus Rift
-  * Optional: Command to load new maze instance
-  * Optional: Control for allowing user to control maze query (rather than random trending topic)
+  1. Write control code that captures input to allow for interaction with maze
+  2. Have maze display on Oculus Rift
+  3. Optional: Command to load new maze instance
+  4. Optional: Control for allowing user to control maze query (rather than random trending topic)
 1. Possibly Some Cleanup
