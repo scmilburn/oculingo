@@ -16,18 +16,18 @@ Twitter Rest API: to poll twitter for trending topics and gather tweets for view
 C#: Aggregate of scripts designed to create the maze
 
 Structures and Design
-1.User opens Unity game (Maze class)
-2.Page loads script to initiate construction of a maze (MazeCollection class)
- *Twitter API polls a trending topic to explore
- *Twitter API gathers tweets from trending topic and stores them into a set
- *Scripts creates data representation of the maze
-3.Unity reads maze data (MazeConstruction class)
-  *Unity reads data from Twitter based process, creating a 2D plane of cells or areas to be the “floor plan” of the maze
-  *Populate areas of the maze with floating text of tweets that created the maze, providing the visualization of the data
-  *Processes anything necessary to make the maze “tangible” and “usable”
+1. User opens Unity game (Maze class)
+2. Page loads script to initiate construction of a maze (MazeCollection class)
+ * Twitter API polls a trending topic to explore
+ * Twitter API gathers tweets from trending topic and stores them into a set
+ * Scripts creates data representation of the maze
+3. Unity reads maze data (MazeConstruction class)
+  * Unity reads data from Twitter based process, creating a 2D plane of cells or areas to be the “floor plan” of the maze
+  * Populate areas of the maze with floating text of tweets that created the maze, providing the visualization of the data
+  * Processes anything necessary to make the maze “tangible” and “usable”
 4. Handle Control and Oculus (MazeEngine class)
-  *Write control code that captures input to allow for interaction with maze
-  *Have maze display on Oculus Rift
-  *Optional: Command to load new maze instance
-  *Optional: Control for allowing user to control maze query (rather than random trending topic)
+  * Write control code that captures input to allow for interaction with maze
+  * Have maze display on Oculus Rift
+  * Optional: Command to load new maze instance
+  * Optional: Control for allowing user to control maze query (rather than random trending topic)
 5. Possibly Some Cleanup
