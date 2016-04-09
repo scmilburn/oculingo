@@ -1,4 +1,3 @@
-
 #Oculingo Table of Contents
 -Elevator Pitch
 -Project Stack
@@ -36,4 +35,3 @@ Props for the Classroom
 
 Open source 
 https://github.com/giyoonhan/UnityVoiceRecognition
-
