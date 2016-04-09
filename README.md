@@ -1,7 +1,8 @@
 #hashtag_maze
 
 Elevator Pitch
-'#Maze is a web application that builds an interactive visualization of a Twitter topic. It uses Twitter Rest API, three.js, and the Oculus Rift to build procedurally generated maze structures that contain tweets of the given topic, and allows the user to explore these tweets in 3-D space. The procedure for the maze will use characteristics of the tweets to help drive the randomness of the procedural generation.
+
+#Maze is a web application that builds an interactive visualization of a Twitter topic. It uses Twitter Rest API, three.js, and the Oculus Rift to build procedurally generated maze structures that contain tweets of the given topic, and allows the user to explore these tweets in 3-D space. The procedure for the maze will use characteristics of the tweets to help drive the randomness of the procedural generation.
 
 Project Stack
 
