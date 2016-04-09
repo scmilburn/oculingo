@@ -1,34 +1,39 @@
-\#hashtag_maze
 
-\#Maze Table of Contents
-Elevator Pitch
-Project Stack
-Structures and Design
+#Oculingo Table of Contents
+-Elevator Pitch
+-Project Stack
+-Structures and Design
+-Sources
 
-Elevator Pitch
-\#Maze is a web application that builds an interactive visualization of a Twitter topic. It uses Twitter Rest API, Unity, and the Oculus Rift to build procedurally generated maze structures that contain tweets of the given topic, and allows the user to explore these tweets in 3-D space. The procedure for the maze will use characteristics of the tweets to help drive the randomness of the procedural generation.
+##Elevator Pitch
+Oculingo is a Unity based educational tool used to help teach and test foreign languages. The player will select their desired language, and be presented with a scene containing objects to interact with. Depending on the mode of the game, lesson or quiz, the game will either explain the foreign name of the object or ask the player to pronounce it. The experience is fully VR immersive, meaning no interaction with any hardware besides wearables. The number of languages.
+   
+##Oculingo Stack
+Unity: for Oculus Rift support. For displaying scenes and providing support for interaction.
+Microphone(?): to understand user vocal input. Needs to support multiple languages
 
-Project Stack
+##Structures and Design
+GameManager for handing flow of game
+TitleScene for introducing Oculingo, choosing mode and language
+StageScene for housing the Oculus camera and being the “stage” for each interactable object
+LanguageObject prefab for storing 3d model of an object, its various names in different languages, and state of interactable
+QuizMode to handle handling LanguageObjects interaction with camera, displaying goal prompt, playing audio prompt “StageScene.quiz(LanguageObject)” -> function uses native variable to construct a phrase to ask for the LanguageObject’s name in another language.
+LessonMode to handle handling LanguageObjects interaction with camera, playing audio prompt “StageScene.lesson(LanguageObject)” -> function uses native variable to construct a phrase to ask for the LanguageObject’s name in another language.
 
-\#Maze Stack
-Unity: to deliver 3D representation
-Twitter Rest API: to poll twitter for trending topics and gather tweets for viewing
-C#: Aggregate of scripts designed to create the maze
 
-Structures and Design
+    
+##Sources
+    Unity Asset Store
+Props for the Classroom
 
-1. User opens Unity game (Maze class)
-2. Page loads script to initiate construction of a maze (MazeCollection class)
-  1. Twitter API polls a trending topic to explore
-  2. Twitter API gathers tweets from trending topic and stores them into a set
-  3. Scripts creates data representation of the maze
-1. Unity reads maze data (MazeConstruction class)
-  * Unity reads data from Twitter based process, creating a 2D plane of cells or areas to be the “floor plan” of the maze
-  * Populate areas of the maze with floating text of tweets that created the maze, providing the visualization of the data
-  * Processes anything necessary to make the maze “tangible” and “usable”
-1. Handle Control and Oculus (MazeEngine class)
-  * Write control code that captures input to allow for interaction with maze
-  * Have maze display on Oculus Rift
-  * Optional: Command to load new maze instance
-  * Optional: Control for allowing user to control maze query (rather than random trending topic)
-1. Possibly Some Cleanup
+    
+    Voice recognition software
+        UNITY BRIDGE (paid)
+        https://www.assetstore.unity3d.com/en/#!/content/57425
+        
+        UDP voice recog server (free?)
+        http://forum.unity3d.com/threads/windows-udp-voice-recognition-server.172758/
+
+Open source 
+https://github.com/giyoonhan/UnityVoiceRecognition
+
