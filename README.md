@@ -18,9 +18,9 @@ C#: Aggregate of scripts designed to create the maze
 Structures and Design
 1. User opens Unity game (Maze class)
 2. Page loads script to initiate construction of a maze (MazeCollection class)
-  * Twitter API polls a trending topic to explore
-  * Twitter API gathers tweets from trending topic and stores them into a set
-  * Scripts creates data representation of the maze
+  *Twitter API polls a trending topic to explore
+  *Twitter API gathers tweets from trending topic and stores them into a set
+  *Scripts creates data representation of the maze
 1. Unity reads maze data (MazeConstruction class)
   * Unity reads data from Twitter based process, creating a 2D plane of cells or areas to be the “floor plan” of the maze
   * Populate areas of the maze with floating text of tweets that created the maze, providing the visualization of the data
