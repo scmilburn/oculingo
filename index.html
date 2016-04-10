@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Oculingo by scmilburn</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Oculingo</h1>
+        <p>3d visualization of twitter data</p>
+
+        <p class="view"><a href="https://github.com/scmilburn/oculingo">View the Project on GitHub <small>scmilburn/oculingo</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/scmilburn/oculingo/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/scmilburn/oculingo/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/scmilburn/oculingo">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="oculingo-table-of-contents" class="anchor" href="#oculingo-table-of-contents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Oculingo Table of Contents</h1>
+
+<ul>
+<li>Elevator Pitch</li>
+<li>Project Stack</li>
+<li>Structures and Design</li>
+<li>Sources</li>
+</ul>
+
+<h2>
+<a id="elevator-pitch" class="anchor" href="#elevator-pitch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Elevator Pitch</h2>
+
+<p>Oculingo is a Unity-based educational tool used to help teach and learn foreign languages. The player will select their desired language, and be presented with a scene containing objects to interact with. Depending on the mode of the game, lesson or quiz, the game will either explain the foreign name of the object or ask the player to pronounce it. The experience is fully VR immersive, meaning no interaction with any hardware besides wearables.</p>
+
+<h2>
+<a id="oculingo-stack" class="anchor" href="#oculingo-stack" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Oculingo Stack</h2>
+
+<p>Unity: for Oculus Rift support. For displaying scenes and providing support for interaction.
+Microphone: to understand user vocal input. Voice recognition will needs to support multiple languages</p>
+
+<h2>
+<a id="structures-and-design" class="anchor" href="#structures-and-design" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Structures and Design</h2>
+
+<p>GameManager for handing flow of game
+TitleScene for introducing Oculingo, choosing mode and language
+StageScene for housing the Oculus camera and being the “stage” for each interactable object
+LanguageObject prefab for storing 3d model of an object, its various names in different languages, and state of interactable
+QuizMode to handle handling LanguageObjects interaction with camera, displaying goal prompt, playing audio prompt “StageScene.quiz(LanguageObject)” -&gt; function uses native variable to construct a phrase to ask for the LanguageObject’s name in another language.
+LessonMode to handle handling LanguageObjects interaction with camera, playing audio prompt “StageScene.lesson(LanguageObject)” -&gt; function uses native variable to construct a phrase to ask for the LanguageObject’s name in another language.</p>
+
+<h2>
+<a id="sources" class="anchor" href="#sources" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sources</h2>
+
+<p>Unity Asset Store
+Props for the Classroom
+Open source vocal recognition
+<a href="https://github.com/giyoonhan/UnityVoiceRecognition">https://github.com/giyoonhan/UnityVoiceRecognition</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/scmilburn">scmilburn</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
