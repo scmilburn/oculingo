@@ -4,6 +4,9 @@
 *Structures and Design
 *Sources
 
+##Use
+Open the 'Unity' project folder in Unity and import the voice-core package to allow for voice recognition 
+
 ##Elevator Pitch
 Oculingo is a Unity based educational tool used to help teach and test foreign languages. The player will select their desired language, and be presented with a scene containing objects to interact with. Depending on the mode of the game, lesson or quiz, the game will either explain the foreign name of the object or ask the player to pronounce it. The experience is fully VR immersive, meaning no interaction with any hardware besides wearables. The demo examples support English, Spanish, French, German, and Japanese.
    
