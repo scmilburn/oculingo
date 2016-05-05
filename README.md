@@ -1,10 +1,10 @@
 #Oculingo Table of Contents
-*Elevator Pitch
-*Project Stack
-*Structures and Design
-*Sources
+* Elevator Pitch
+* Project Stack
+* Structures and Design
+* Sources
 
-##Use
+##Usage
 Open the 'Unity' project folder in Unity and import the voice-core package to allow for voice recognition 
 
 ##Elevator Pitch
@@ -23,11 +23,6 @@ QuizMode to handle handling LanguageObjects interaction with camera, displaying 
 LessonMode to handle handling LanguageObjects interaction with camera, playing audio prompt “StageScene.lesson(LanguageObject)” -> function uses native variable to construct a phrase to ask for the LanguageObject’s name in another language.
 
 ##Sources
-    Unity Asset Store
-    Props for the Classroom
-
-    used for voice recognition 
-    https://github.com/giyoonhan/UnityVoiceRecognition
-
-    used for TTS
-    http://www.chadweisshaar.com/blog/2015/07/02/microsoft-speech-for-unity/
+* Unity Asset Store: Props for the Classroom
+* Voice recognition: https://github.com/giyoonhan/UnityVoiceRecognition
+* TTS: http://www.chadweisshaar.com/blog/2015/07/02/microsoft-speech-for-unity/
